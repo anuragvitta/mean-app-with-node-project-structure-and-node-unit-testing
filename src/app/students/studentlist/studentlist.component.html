@@ -1,0 +1,22 @@
+<div class="card a" style="width: 80rem" >
+  <div class="card-body" style="background-color:#ffffff;">
+<div style="padding:10px;">
+<table *ngIf="students" class="table">
+  <thead class="thead-dark">
+  <tr>
+    <th>Names</th>
+    <th >Branch</th>
+    <th >Age</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let a of students">
+    <td>{{a.name | uppercase}}</td>
+    <td >{{a.branch}}</td>
+    <td >{{a.age}}</td>
+  </tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
